@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: dhruti2005/frontend:latest
+    ports:
+      - "80:80"
+    restart: always
+
+  backend:
+    image: dhruti2005/backend:latest
+    ports:
+      - "5000:5000"
+    restart: always
